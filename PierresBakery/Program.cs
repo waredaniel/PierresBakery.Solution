@@ -13,11 +13,12 @@ namespace Bakery.Models
 
       Console.WriteLine("\nWould you like to place an order? (Y/N)");
       string initialResponse = Console.ReadLine();
-      if (initialResponse.ToLower() == "y")
+      if (initialResponse.ToLower() == "y" || initialResponse.ToLower() == "yes")
       {
         Console.WriteLine("Great, how many loaves of Bread would you like?");
-        int breadAmount = int.Parse(Console.ReadLine());
-        Console.WriteLine("");
+        int breadOrder = int.Parse(Console.ReadLine());
+        var orderBread = new Bread(breadOrder);
+        Console.WriteLine("Fantastic. " + orderBread.BreadAmount + " loaves will run you " + orderBread.BreadCost());
       }
       else 
       {
