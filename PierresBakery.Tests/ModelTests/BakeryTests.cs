@@ -51,8 +51,16 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryCost_OnePastry_Int()
     {
-      int pastryAmount = 0;
-      double pastryCost = 0;
+      int pastryAmount = 1;
+      double pastryCost = 2;
+      Pastry testOrder = new Pastry(pastryAmount);
+      Assert.AreEqual(pastryCost, testOrder.PastryCost());
+    }
+     [TestMethod]
+    public void PastryCost_TwoPastry_Int()
+    {
+      int pastryAmount = 2;
+      double pastryCost = 4;
       Pastry testOrder = new Pastry(pastryAmount);
       Assert.AreEqual(pastryCost, testOrder.PastryCost());
     }
