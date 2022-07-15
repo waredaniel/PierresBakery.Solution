@@ -1,15 +1,14 @@
-# (Application Name)
+# Pierre's Bakery
 
 #### (Brief Description of Application)
 
-#### By (Your Name Here)
+#### By Daniel Ware
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* C#
+* .NET
+
 
 ## Description
 
@@ -27,5 +26,7 @@
 * _should go here_
 
 ## License
+
+MIT (c) 2022
 
 ## Contact Information
