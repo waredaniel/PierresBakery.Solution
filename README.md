@@ -1,6 +1,6 @@
 # Pierre's Bakery
 
-#### (Brief Description of Application)
+#### This console application simulates a bakery with bread and pastries featured with sale prices. 
 
 #### By Daniel Ware
 
@@ -14,19 +14,20 @@
 
 ## Setup/Installation Requirements
 
-* git clone 
-* change the project names in Template.Tests.csproj to match your project
-* change file names to match your project
+* git clone the repository to desktop
+* Open PierresBakery.Solution in VS Code
+* Navigate to PierresBakery.Tests
 * run $ dotnet restore
-* uncomment line 5 in Template.csproj after you add UI logic. 
+* Navigate to PierresBakery directory and run $ dotnet run
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None
 
 ## License
 
 MIT (c) 2022
 
 ## Contact Information
+
+Please feel free to contact me at: <waredanielb@gmail.com>
