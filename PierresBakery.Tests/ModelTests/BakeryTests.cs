@@ -1,11 +1,36 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using System;
+using System.Collections.Generic;
+using Bakery.Models;
 
-namespace ProjectName.Tests
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class BakeryTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void BreadCost_OneBread_Int()
+    {
+      int breadAmount = 1;
+      double breadCost = 5;
+      Bread testOrder = new Bread(breadAmount);
+      Assert.AreEqual(breadCost, testOrder.BreadCost());
+    }
+    [TestMethod]
+    public void BreadCost_TwoBread_Int()
+    {
+      int breadAmount = 2;
+      double breadCost = 10;
+      Bread testOrder = new Bread(breadAmount);
+      Assert.AreEqual(breadCost, testOrder.BreadCost());
+    }
+     [TestMethod]
+    public void BreadCost_ThreeBread_Int()
+    {
+      int breadAmount = 3;
+      double breadCost = 10;
+      Bread testOrder = new Bread(breadAmount);
+      Assert.AreEqual(breadCost, testOrder.BreadCost());
+    }
   }
 }
