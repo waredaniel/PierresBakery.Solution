@@ -16,19 +16,19 @@ namespace Bakery.Models
       if (initialResponse.ToLower() == "y" || initialResponse.ToLower() == "yes")
       {
         //Bread Order
-         Console.WriteLine("Great, how many loaves of Bread would you like?");
+         Console.WriteLine("\nGreat, how many loaves of Bread would you like?");
         int breadOrder = int.Parse(Console.ReadLine());
         var orderBread = new Bread(breadOrder);
-        Console.WriteLine("Fantastic. " + orderBread.BreadAmount + " loaves will run you $" + orderBread.BreadCost());
+        Console.WriteLine("\nFantastic. " + orderBread.BreadAmount + " loaves will run you $" + orderBread.BreadCost());
         //Pastry Order
-        Console.WriteLine("How many Pastries would you like to add to your order?");
+        Console.WriteLine("\nHow many Pastries would you like to add to your order?");
         int pastryOrder = int.Parse(Console.ReadLine());
         var orderPastry = new Pastry(pastryOrder);
-        Console.WriteLine("Ok. " + orderPastry.PastryAmount + " pastries will come to $" + orderPastry.PastryCost());
+        Console.WriteLine("\nOk. " + orderPastry.PastryAmount + " pastries will come to $" + orderPastry.PastryCost());
         //Checkout
         double orderTotal = (orderPastry.PastryCost() + orderBread.BreadCost());
-        Console.WriteLine("Alright, let me just box that up for you. I'm sure you'll enjoy our baked goods!");
-        Console.WriteLine("Your order comes to $" + orderTotal + ".");
+        Console.WriteLine("\nAlright, let me just box that up for you. I'm sure you'll enjoy our baked goods!");
+        Console.WriteLine("\nYour order comes to $" + orderTotal + ". Have a wonderful day!");
       }
       else 
       {
