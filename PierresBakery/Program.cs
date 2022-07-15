@@ -35,29 +35,5 @@ namespace Bakery.Models
         Console.WriteLine("Come back soon, we hope you change your mind!");
       }
     }
-      // public static void OrderBread()
-      // {
-      //   Console.WriteLine("Great, how many loaves of Bread would you like?");
-      //   int breadOrder = int.Parse(Console.ReadLine());
-      //   var orderBread = new Bread(breadOrder);
-      //   Console.WriteLine("Fantastic. " + orderBread.BreadAmount + " loaves will run you $" + orderBread.BreadCost());
-      //   OrderPastry();
-
-      // }
-      // public static void OrderPastry()
-      // {
-      //   Console.WriteLine("Would you like to add any Pastries to your order?");
-      //   int pastryOrder = int.Parse(Console.ReadLine());
-      //   var orderPastry = new Pastry(pastryOrder);
-      //   Console.WriteLine("Ok. " + orderPastry.PastryAmount + " pastries will come to $" + orderPastry.PastryCost());
-      //   OrderTotal();
-
-      // }
-      // public static double OrderTotal()
-      // {
-      //   double orderTotal = (orderPastry.PastryCost);
-      //   Console.WriteLine("Alright, let me just box that up for you. I'm sure you'll enjoy our baked goods");
-      //   Console.WriteLine("Your order somes to $" + orderTotal);
-      // }
   }
 }
